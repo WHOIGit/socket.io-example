@@ -41,7 +41,7 @@ socket.on(Socket.EVENT_CONNECT, new Emitter.Listener() {
 });
 ```
 
-This led to a lengthy, headache-inducing debugging session to figure out why a single heartbeat was emitted and then nothing afterwards, with no errors. This was ultimately due to the fact taht this event handler was blocking the thread that was simultaneously used to enqueue outgoing messages.
+This led to a lengthy, headache-inducing debugging session to figure out why a single heartbeat was emitted and then nothing afterwards, with no errors. This was ultimately due to the fact that this event handler was blocking the thread that was simultaneously used to enqueue outgoing messages.
 
 
 ## Lessons Not Learned
