@@ -4,10 +4,10 @@ This repository contains a small example of using [Socket.IO][]. It includes
 
 [Socket.IO]: https://Socket.IO
 
-    * a Java publisher node that emits a heartbeat message every second;
-    * a browser-side JavaScript client that subscribes to the heartbeat messages;
-    * a Node.js server that routes messages between them; and
-    * and example of running these services under Docker.
+ * a Java publisher node that emits a heartbeat message every second;
+ * a browser-side JavaScript client that subscribes to the heartbeat messages;
+ * a Node.js server that routes messages between them; and
+ * and example of running these services under Docker.
 
 This example code was put together hastily and may not be the finest example of Socket.IO code. And there are indications that development of Socket.IO may be discontinued.
 
