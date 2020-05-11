@@ -1,0 +1,18 @@
+version: '3'
+
+services:
+    server:
+        build: ./server/
+        environment:
+            - PORT=9041
+            - TOKEN=secret_publisher_token
+        ports:
+            - 9041:9041
+
+    publisher:
+        build: ./java/
+        environment:
+            - URL=http://localhost:9041
+            - TOKEN=secret_publisher_token
+        depends_on:
+            - server
