@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/2.3.0/socket.io.slim.js"></script>
+</head>
+<body>
+    <h1 id="timestamp"></h1>
+    <script>
+        window.onload = () => {
+            const socket = io('http://localhost:9041/');
+            socket.on('connect', () => {
+                console.log('Connected to server');
+                socket.on('update', (data) => {
+                    // data is already deserialized
+                    window.timestamp.innerText = data.time;
+                });
+            });
+        };
+    </script>
+</body>
+</html>
