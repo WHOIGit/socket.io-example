@@ -11,7 +11,13 @@ This repository contains a small example of using [Socket.IO][]. It includes
 
 This example code was put together hastily and may not be the finest example of Socket.IO code. And there are indications that development of Socket.IO may be discontinued.
 
-Please refer to the Socket.IO documentation 
+Please refer to the Socket.IO documentation.
+
+
+## How To Use
+
+Just run `docker-compose up -d` and open the `web/index.html` file in your browser.
+
 
 ## Lessons Learned
 
