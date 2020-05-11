@@ -12,7 +12,7 @@ services:
     publisher:
         build: ./java/
         environment:
-            - URL=http://localhost:9041
+            - URL=http://server:9041
             - TOKEN=secret_publisher_token
         depends_on:
             - server
