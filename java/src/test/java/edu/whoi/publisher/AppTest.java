@@ -1,4 +1,4 @@
-package edu.whoi.redispub;
+package edu.whoi.publisher;
 
 import static org.junit.Assert.assertTrue;
 
