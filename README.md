@@ -7,7 +7,7 @@ This repository contains a small example of using [Socket.IO][]. It includes
  * a Java publisher node that emits a heartbeat message every second;
  * a browser-side JavaScript client that subscribes to the heartbeat messages;
  * a Node.js server that routes messages between them; and
- * and example of running these services under Docker.
+ * Dockerfiles necessary to run the services under Docker.
 
 This example code was put together hastily and may not be the finest example of Socket.IO code. And there are indications that development of Socket.IO may be discontinued.
 
@@ -16,7 +16,7 @@ Please refer to the Socket.IO documentation.
 
 ## How To Use
 
-Just run `docker-compose up -d` and open the `web/index.html` file in your browser.
+Just run `docker-compose up` and open the `web/index.html` file in your browser.
 
 
 ## Lessons Learned
